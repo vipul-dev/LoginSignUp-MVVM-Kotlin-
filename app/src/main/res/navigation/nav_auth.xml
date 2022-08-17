@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_auth"
+    app:startDestination="@id/fragmentLogin">
+
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="com.dev.pvaeps.ui.fragment.login.FragmentLogin"
+        android:label="FragmentLogin"
+        tools:layout="@layout/fragment_log_in">
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentSignUp"
+            app:destination="@id/fragmentSignUp" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentSignUp"
+        android:name="com.dev.pvaeps.ui.fragment.signup.FragmentSignUp"
+        android:label="FragmentSignUp"
+        tools:layout="@layout/fragment_sign_up"/>
+
+
+
+</navigation>
